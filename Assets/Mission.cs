@@ -2,22 +2,29 @@ using UnityEngine;
 
 public class Mission : MonoBehaviour
 {
-    public void NovaMissio()
+    public void NewMission()
     {
-        PlayerStats stats = FindObjectOfType<PlayerStats>();
+        PlayerStats stats = FindAnyObjectByType<PlayerStats>();
 
-        if (stats.xp > 420)
+        if (stats != null) //verifica si existeix stats
         {
-            Debug.Log("Let's go!");
+            if (stats.xp > 420)
+            {
+                Debug.Log("Let's go!");
+            }
+            else
+            {
+                Debug.Log("I'm too weak");
+            }
         }
         else
         {
-            Debug.Log("I'm too weak");
+            Debug.LogError("No s'ha trobat cap PlayerStats a l'escena!");
         }
     }
 
     void Start()
     {
-        NovaMissio();
+        NewMission();
     }
 }

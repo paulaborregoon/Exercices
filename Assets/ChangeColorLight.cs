@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class ChangeColorLight : MonoBehaviour
 {
+    public Light llum;
     void Start()
     {
-        Light llum = GetComponent<Light>();
+        llum = GetComponent<Light>();
         llum.color = Color.blue;
     }
 }
