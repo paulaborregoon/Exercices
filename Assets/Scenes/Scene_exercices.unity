@@ -847,12 +847,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1260148797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc56fdb6df37bef49824c41e52b97222, type: 3}
+  m_Script: {fileID: 11500000, guid: e9d2d613a36fd6148adb4a7ad7172e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spheres: []
+  spheres:
+  - {fileID: 2082658337}
+  - {fileID: 1918482350}
+  - {fileID: 841061525}
+  - {fileID: 1890766002}
+  - {fileID: 852984896}
+  - {fileID: 1557372274}
   delay: 0.5
-  autoCollectChildren: 1
 --- !u!4 &1260148799
 Transform:
   m_ObjectHideFlags: 0
